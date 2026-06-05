@@ -28,6 +28,13 @@ def sanitize(name: str) -> str:
 
 
 def extract_text(layer) -> str:
+    # psd_tools >= 2.0: TypeLayer 直接暴露 .text 属性
+    try:
+        if hasattr(layer, "text") and layer.text:
+            return str(layer.text).replace("\r", "\n").strip()
+    except Exception:
+        pass
+    # 旧版 / 备用：从 engine_dict 深取
     try:
         if hasattr(layer, "engine_dict") and layer.engine_dict:
             editor = layer.engine_dict.get("EngineDict", {}).get("Editor", {})
@@ -42,7 +49,8 @@ def extract_text(layer) -> str:
 def flatten(psd, sprite_dir: Path) -> list:
     """
     将 PSD 图层树展平为带 parent_index 的平铺列表。
-    reversed() 保证底层（背景）先加入列表，在 Unity Canvas 中先渲染（在下方）。
+    psd_tools 迭代顺序：index 0 = 图层面板最底层（背景），最后 = 最顶层（前景）。
+    直接按此顺序处理，背景先入列表 → Unity sibling index 最小 → 渲染在最下方，与 PSD 一致。
     """
     result = []
 
@@ -67,8 +75,7 @@ def flatten(psd, sprite_dir: Path) -> list:
         result.append(node)
 
         if layer.is_group():
-            # reversed: 底层子图层先处理，在 Unity 中先渲染（在下方）
-            for child in reversed(list(layer)):
+            for child in list(layer):
                 process(child, idx)
         else:
             if kind == "text":
@@ -81,13 +88,13 @@ def flatten(psd, sprite_dir: Path) -> list:
                 if img and img.width > 0 and img.height > 0:
                     img.save(sprite_dir / file_name)
                     node["file"] = file_name
-                    print(f"  ✓ [{idx:03d}] {file_name}")
+                    print(f"  [OK] [{idx:03d}] {file_name}")
                 else:
-                    print(f"  - [{idx:03d}] {layer.name} (空图层，跳过)")
+                    print(f"  [--] [{idx:03d}] {layer.name} (空图层，跳过)")
             except Exception as e:
-                print(f"  ✗ [{idx:03d}] {layer.name}: {e}")
+                print(f"  [NG] [{idx:03d}] {layer.name}: {e}")
 
-    for layer in reversed(list(psd)):
+    for layer in list(psd):
         process(layer, -1)
 
     return result
