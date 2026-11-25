@@ -1,0 +1,6 @@
+{
+  "name": "Starlight.LocalUIConverter.Annotations",
+  "rootNamespace": "Starlight.LocalUIConverter",
+  "references": [],
+  "autoReferenced": true
+}

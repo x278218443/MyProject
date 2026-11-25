@@ -1,0 +1,7 @@
+{
+  "name": "Starlight.LocalUIConverter.Editor",
+  "rootNamespace": "Starlight.Game.Editor.LocalUIConverter",
+  "references": ["Unity.TextMeshPro", "Unity.ugui", "Starlight.LocalUIConverter.Annotations"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

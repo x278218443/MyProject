@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b53313e7c8f5747a27c3096f8f0594, type: 3}
+  m_Name: LocalUIConverterSettings
+  m_EditorClassIdentifier: 
+  outputRoot: Assets/__Temp
+  fontRoot: Assets/Bundles/Fonts
+  outlineMaterialFolder: Assets/Bundles/Fonts/OutlineMaterial
+  generatedFontFolder: Assets/Bundles/Fonts/LocalPSDGenerated
+  commonTextureRoot: Assets/Bundles/UI/UIImages/UICommon
+  artTextureRoot: 
+  defaultFont: {fileID: 11400000, guid: b434cc7d826f58b408f082e21aeabdbe, type: 2}
+  uiLayer: UI
+  textWidthScale: 1
+  textHeightScale: 1
+  componentRules:
+  - prefix: txt_
+    componentScript: {fileID: 11500000, guid: 25474339f142c964f958735a0f050083, type: 3}
+  prefabRules:
+  - nodeName: K1
+    prefab: {fileID: 8883820241820173777, guid: c8f5305ae0c03e54d862f64b43a5dfd1, type: 3}
+  - nodeName: K2
+    prefab: {fileID: 8883820241820173777, guid: bab42d602c20ce6429d072302f10115d, type: 3}
+  - nodeName: K3
+    prefab: {fileID: 8615272977585765913, guid: 8d3dbd903dc96fd4fa326a4be1f87c34, type: 3}
+  - nodeName: K4
+    prefab: {fileID: 8883820241820173777, guid: c8f5305ae0c03e54d862f64b43a5dfd1, type: 3}
+  - nodeName: K5
+    prefab: {fileID: 8883820241820173777, guid: bab42d602c20ce6429d072302f10115d, type: 3}
+  - nodeName: K6
+    prefab: {fileID: 8883820241820173777, guid: 5c54d6ae7a2cfeb4dbf7dafd7b7ca3a1, type: 3}
+  - nodeName: K7
+    prefab: {fileID: 7674689727645386904, guid: 3e67d227c3be05b46aa3cfc909ffe4d5, type: 3}
+  - nodeName: K8
+    prefab: {fileID: 7438017778549009019, guid: e1d8d1994614d244ba9b6dba888bc8b2, type: 3}
+  - nodeName: K9
+    prefab: {fileID: 5784666681937188206, guid: 3507507219984ba4d9a9f6e4bd86e5ce, type: 3}
+  - nodeName: K11
+    prefab: {fileID: 1896519338258343557, guid: 313e9bb7dc8d9e34b857c5833a491218, type: 3}
+  - nodeName: K12
+    prefab: {fileID: 172200318944523386, guid: c6558b8fba850df4880aa0df53bb7dec, type: 3}
+  - nodeName: K14
+    prefab: {fileID: 5378418327563210452, guid: 72280196039e36d47970a343c4408101, type: 3}
+  - nodeName: K15
+    prefab: {fileID: 907388683080895734, guid: 1fece6c5d4372dc46a2431158e8555bc, type: 3}
+  - nodeName: K17
+    prefab: {fileID: 7807439122739672284, guid: 8c63f9eb8fed3f0409d8b96872c0083a, type: 3}
+  - nodeName: K19
+    prefab: {fileID: 4046939722070139571, guid: 3f4307714fabca74f9c866147da61eaf, type: 3}
+  - nodeName: K21
+    prefab: {fileID: 3650799983908711892, guid: df647c22d78ceb747974446e97a432e5, type: 3}
+  - nodeName: K24
+    prefab: {fileID: 871127363069775014, guid: 828b5043a567f8040ae441bcec13ae6d, type: 3}
+  - nodeName: K25
+    prefab: {fileID: 7813683636710900658, guid: 62825cbfd3f970647a794ec1c295d732, type: 3}
+  - nodeName: K261
+    prefab: {fileID: 7755520546998035869, guid: e997c949dd58fbf4d90dfa63501faa8d, type: 3}
+  - nodeName: K262
+    prefab: {fileID: 4303053151782794053, guid: 987dfe69a93199c4e9bfa6beb26d64df, type: 3}
+  - nodeName: K263
+    prefab: {fileID: 6236790512209472347, guid: 57a3b2cd66c6eec4eb5901d612ffd097, type: 3}
+  - nodeName: K265
+    prefab: {fileID: 4303053151782794053, guid: 9f48057826a3e714487bb33ea5d62715, type: 3}
+  - nodeName: K27
+    prefab: {fileID: 3274767741712326435, guid: cb9cde7e18e82f04e8d343353dfc53cd, type: 3}
+  - nodeName: K28
+    prefab: {fileID: 2876774372664397735, guid: e4ae0dba0091f674aac54b8b2f96fb48, type: 3}
+  - nodeName: K291
+    prefab: {fileID: 3985118624950649449, guid: 222f5d904841eb74d9b64202e6d35136, type: 3}
+  - nodeName: K292
+    prefab: {fileID: 3985118624950649449, guid: 11e5b42832fb55145ac6510a60a36122, type: 3}
+  - nodeName: K30
+    prefab: {fileID: 7755520546998035869, guid: 3f5f771231d4ccd4b8442dfcb37790a1, type: 3}
+  - nodeName: K31
+    prefab: {fileID: 8535352610364709209, guid: 1efd66c8fc9f53e4c983aca956f63e78, type: 3}
+  - nodeName: K32
+    prefab: {fileID: 1003162104130042367, guid: 87bbd778c68688645975a15d9bfd1f53, type: 3}
+  - nodeName: K33
+    prefab: {fileID: 870001669217096756, guid: 033850880621f5d4597f4a7c30198a49, type: 3}
+  - nodeName: K34
+    prefab: {fileID: 8906087264807365174, guid: 2886969d6b7cc3948bc25c1df2eebbb3, type: 3}
+  - nodeName: K36
+    prefab: {fileID: 3650799983908711892, guid: bf2e08be94ec14a4ab9cbd3212d980f4, type: 3}
+  - nodeName: K37
+    prefab: {fileID: 8993266025027196269, guid: 101a4b907b22d2449bdb38990ee3324b, type: 3}
+  - nodeName: K43
+    prefab: {fileID: 4303053151782794053, guid: 987dfe69a93199c4e9bfa6beb26d64df, type: 3}
+  - nodeName: K44
+    prefab: {fileID: 4908812609821776999, guid: 35e829542cec3e04596c4ffbc3f38d65, type: 3}
+  - nodeName: K45
+    prefab: {fileID: 4574849634187445330, guid: a1354b116afcada4c819f40d30ae7f9f, type: 3}
+  - nodeName: M1
+    prefab: {fileID: 789636461368840357, guid: cbb620d20ac86a349bf3f303472ccff8, type: 3}
+  - nodeName: M2
+    prefab: {fileID: 789636461368840357, guid: a2bb5e5be9ff31746989358524db5bce, type: 3}
+  - nodeName: M3
+    prefab: {fileID: 8825436685885166530, guid: a7f345cdc044d054d8bebd078e4c9390, type: 3}
+  - nodeName: M4
+    prefab: {fileID: 2225187670576935130, guid: e044bcf565014454b89061af7b277656, type: 3}
+  - nodeName: M6
+    prefab: {fileID: 8213843375526190021, guid: 75c66828656ced848ab3188c86b452ea, type: 3}
+  - nodeName: M12
+    prefab: {fileID: 6140110184087505240, guid: a6c0da81b42c4b34abcc507d012a08b2, type: 3}
+  - nodeName: M13
+    prefab: {fileID: 6140110184087505240, guid: 3161cd4bfa26541469cc68123d99735e, type: 3}
+  - nodeName: Q1
+    prefab: {fileID: 1192224968673326542, guid: 739a5a8d20ccdae4d90afb6c76e12223, type: 3}
+  - nodeName: Q2
+    prefab: {fileID: 1192224968673326542, guid: f61581b7382d9734684743ef09e9dc91, type: 3}
+  - nodeName: Q3
+    prefab: {fileID: 3490014385811296301, guid: 729bc7fc8dd3a98458d3c83b664a2568, type: 3}
+  - nodeName: Q5
+    prefab: {fileID: 6159550809017377254, guid: 7a2640efec9cb5349b49b128bf430dba, type: 3}
+  fontRules:
+  - psdFontName: '''FZZCHJW--GB1-0'''
+    fontAsset: {fileID: 11400000, guid: 246c0ac5ae4e0c744b6d143e48cf206f, type: 2}
+  - psdFontName: '''FZRUIZH_CUJW--GB1-0'''
+    fontAsset: {fileID: 11400000, guid: b434cc7d826f58b408f082e21aeabdbe, type: 2}
